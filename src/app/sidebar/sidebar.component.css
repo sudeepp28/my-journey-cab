@@ -1,0 +1,93 @@
+/* Backdrop to cover the entire screen when sidebar is open */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+  z-index: 998;
+}
+
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  backdrop-filter: blur(12px); /* applies the blur */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: slideIn 0.3s ease-out;
+}
+/* Animation for sidebar entry */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Close button (X) */
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+/* Sidebar links */
+.sidebar a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid rgb(20, 20, 43);
+}
+
+.sidebar a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sign in and Contact Us buttons */
+.sign-in-btn,
+.contact-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sign-in-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.sign-in-btn:hover {
+  background-color: #0056b3;
+}
+
+.contact-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.contact-btn:hover {
+  background-color: #1e7e34;
+}

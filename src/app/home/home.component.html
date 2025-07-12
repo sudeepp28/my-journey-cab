@@ -1,0 +1,113 @@
+
+<div class="first"  >
+<img src="assets/home 1st.png" alt="">
+<div class="upperlayer">
+    <div class="text">
+        <h1>My Journey Cabs</h1>
+        <h2>Driven Across India, Powered by Trust</h2>
+    </div>
+    <button class="btn">BOOK NOW</button>
+</div>
+</div>
+<br>
+<div class="second">
+    <div class="text">
+        <h2>Need a car? From Sedan to Luxury- We've Got You Covered!</h2>
+        <p>
+            Serving <strong>Pan India</strong>, we cater to personal, corporate, and leisure travel needs with professionals chauffeurs, 24/7 service, and a focus on customer satisfaction. Whenever your journey takes you - <strong>My Journey Cabs</strong> is ready to ride along.
+        </p>
+        <button class="callBtn">
+            Call Us Now
+        </button>
+    </div>
+    <img src="assets/home 2nd.png" alt="">
+
+</div>
+<br>
+<div class="third">
+    <img src="assets/home 3rd.png" alt="">
+    <div class="text">
+        <h2>
+            Outstation Trips with <strong>My Journey Cabs</strong>
+        </h2>
+        <p>
+            Planning a getaway or a business visit out of town?
+            <Strong>My Journey Cabs</Strong> offers seamless <strong>Outstation cab services</strong> across India. Whether it's a weekend excape, a family function, or a multi-city work tour, we Provide well-maintained <strong>Sedans, SUV's and Luxury cars</strong> with experienced drivers for a safe and comfortable journey.
+         </p>
+         <button>
+            Explore our Car Rental Services
+         </button>
+    </div>
+</div>
+<br>
+<div class="fourth">
+    <div class="heading">
+       <h2> Every Ride. Every Occasion. One Name – My Journey Cabs.</h2>
+       <p>From Sedans to SUVs to Luxury – We’ve Got the Perfect Cab for You!</p>
+    </div>
+   
+        <div class="card-section">
+  <div class="service-card" *ngFor="let service of services">
+    <img [src]="service.image" [alt]="service.title" />
+    <div class="card-content">
+      <h3>{{ service.title }}</h3>
+      <p [innerHTML]="service.description"></p>
+      <button>Rent a car now</button>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Journey Message Section -->
+<div class="journey-banner">
+  <h2>Where every journey begins with the right vehicle.</h2>
+</div>
+
+<!-- Partner Section -->
+<div class="partners-section">
+  <h3>Our Partners</h3>
+  <p>
+    At <strong><em>My Journey Cabs</em></strong>, we proudly collaborate with a wide network of trusted partners to deliver seamless travel experiences across India
+  </p>
+  <ul>
+    <li>Leading Travel Agencies</li>
+    <li>Corporate Clients & Event Planners</li>
+    <li>Tour Operators</li>
+    <li>Hotel & Resort Chains</li>
+    <li>Wedding & VIP Event Managers</li>
+    <li>Airport & Railway Transport Services</li>
+    <li>Fleet Owners & Local Cab Providers</li>
+  </ul>
+</div>
+<div class="explore-section">
+  <div class="explore-left">
+    <h2>Explore With Us</h2>
+    <p>
+      Expanding Across India – 300+ Cities, 4000 Vehicles, 10,000+ Satisfied Customers.
+    </p>
+  </div>
+
+  <div class="explore-right">
+    <div class="stat-box blue">
+      <h3>300+</h3>
+      <p>Serving in 300+ Cities</p>
+    </div>
+    <div class="stat-box dark">
+      <h3>10000+</h3>
+      <p>Trusted by 10,000+ Happy Customers</p>
+    </div>
+    <div class="stat-box teal">
+      <h3>4000+</h3>
+      <p>Fleet of 4000+ Vehicles</p>
+    </div>
+  </div>
+</div>
+<app-testimonial></app-testimonial>
+
+<div class="cta-section">
+  <div class="cta-content">
+    <h2>Comfort, Class, Convenience – Just a Click Away. Book Now</h2>
+    <button class="cta-button">Contact us</button>
+  </div>
+</div>
