@@ -1,0 +1,18 @@
+<div class="fourth">
+    <div class="heading">
+       <h2> Every Ride. Every Occasion. One Name – My Journey Cabs.</h2>
+       <p>From Sedans to SUVs to Luxury – We’ve Got the Perfect Cab for You!</p>
+    </div>
+   
+        <div class="card-section">
+  <div class="service-card" *ngFor="let service of services">
+    <img [src]="service.image" [alt]="service.title" />
+    <div class="card-content">
+      <h3>{{ service.title }}</h3>
+      <p [innerHTML]="service.description"></p>
+      <button>Rent a car now</button>
+    </div>
+  </div>
+</div>
+
+</div>

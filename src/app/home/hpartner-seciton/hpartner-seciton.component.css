@@ -1,0 +1,99 @@
+.partners-section {
+  background-color: #f4f7fa;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.partners-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.partners-section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners-section ul {
+  list-style-type: disc;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
+
+.partners-section li {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.explore-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Left side text */
+.explore-left {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.explore-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.explore-left p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Right side stats */
+.explore-right {
+  display: grid;
+  flex: 2 1 500px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Each stat box */
+.stat-box {
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.stat-box h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Colors */
+.stat-box.blue {
+  background-color: #265c74;
+}
+
+.stat-box.dark {
+  background-color: #111;
+}
+
+.stat-box.teal {
+  background-color: #a7d8dd;
+  color: #000;
+}

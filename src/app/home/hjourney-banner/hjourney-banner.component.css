@@ -1,0 +1,16 @@
+.journey-banner {
+  background-color: #a7d8dd; /* light teal background */
+  /* background-image: url('assets/banner-lines.svg'); optional: your pattern image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.journey-banner h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #222;
+  max-width: 900px;
+  margin: 0 auto;
+}

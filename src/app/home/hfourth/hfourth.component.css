@@ -1,0 +1,93 @@
+
+.fourth {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.fourth .heading {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.fourth .heading h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.fourth .heading p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Card Grid Section */
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Individual Card */
+.service-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* margin: 20px;
+  margin-right: 20px; */
+  margin-top: 10px;
+}
+
+/* Card Text Content */
+.card-content {
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card-content strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* CTA Button */
+.card-content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+  background-color: #0056b3;
+}
