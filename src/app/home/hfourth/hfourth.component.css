@@ -1,4 +1,3 @@
-
 .fourth {
   padding: 4rem 2rem;
   background-color: #f5f5f5;
@@ -22,39 +21,41 @@
 }
 
 /* Card Grid Section */
+/* Ensure all cards have equal height */
 .card-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  align-items: stretch;
 }
 
-/* Individual Card */
+/* Make service cards use flex layout */
 .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
+/* Make image height consistent */
 .service-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  /* margin: 20px;
-  margin-right: 20px; */
-  margin-top: 10px;
+  height: 160px;           /* Fixed height for uniformity */
+  object-fit: contain;     /* Prevent distortion */
+  padding: 10px;
 }
 
-/* Card Text Content */
+/* Stretch card content */
 .card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1rem 1.2rem;
   text-align: left;
 }
@@ -85,6 +86,7 @@
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  align-self: flex-start;
   transition: background-color 0.3s ease;
 }
 
