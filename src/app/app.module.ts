@@ -12,7 +12,7 @@ import { HomeComponent } from "./home/home.component";
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from "./header/header.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
-import { TestimonialComponent } from "./testimonial/testimonial.component";
+import { TestimonialComponent } from "./home/testimonial/testimonial.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HfirstComponent } from "./home/hfirst/hfirst.component";
 import { HsecondComponent } from "./home/hsecond/hsecond.component";
@@ -20,6 +20,14 @@ import { HthirdComponent } from "./home/hthird/hthird.component";
 import { HfourthComponent } from "./home/hfourth/hfourth.component";
 import { HjourneyBannerComponent } from "./home/hjourney-banner/hjourney-banner.component";
 import { HpartnerSecitonComponent } from "./home/hpartner-seciton/hpartner-seciton.component";
+import { AboutComponent } from "./about/about.component";
+import { AfirstComponent } from "./about/afirst/afirst.component";
+import { AsecondComponent } from "./about/asecond/asecond.component";
+import { ServiceComponent } from "./service/service.component";
+import { SFirstComponent } from "./service/s-first/s-first.component";
+import { SSecondComponent } from "./service/s-second/s-second.component";
+import { SthirdComponent } from "./service/sthird/sthird.component";
+
 
 
 
@@ -35,7 +43,9 @@ import { HpartnerSecitonComponent } from "./home/hpartner-seciton/hpartner-secit
 
 @NgModule({
     declarations:[AppComponent,
-        HomeComponent,HeaderComponent,SidebarComponent,TestimonialComponent,FooterComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent,HjourneyBannerComponent,HpartnerSecitonComponent
+        HomeComponent,HeaderComponent,SidebarComponent,TestimonialComponent,FooterComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent,HjourneyBannerComponent,HpartnerSecitonComponent,
+        AboutComponent,AfirstComponent,AsecondComponent,
+        ServiceComponent,SFirstComponent,SSecondComponent,SthirdComponent
        ],
     bootstrap:[AppComponent],
     imports: [FormsModule,

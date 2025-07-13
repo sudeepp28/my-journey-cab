@@ -1,0 +1,74 @@
+.con {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.con h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #222;
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0; /* required for animation to start */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* optional slight movement */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Cards Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Each Card */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 240px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+/* City Name */
+.card .text {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Ensure 2 columns on small screens */
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

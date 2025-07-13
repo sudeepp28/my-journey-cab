@@ -1,0 +1,15 @@
+<div class="con">
+    @for(slide of slides;track slide){
+        <div class="slide">
+            <img [src]="slide.src" alt="">
+            <div class="text">
+                <h1>
+                    {{slide.title}}
+                </h1>
+                <p>{{slide.para}}</p>
+                <br><br>
+                <p>{{slide.para2}}</p>
+            </div>
+        </div>
+    }
+</div>

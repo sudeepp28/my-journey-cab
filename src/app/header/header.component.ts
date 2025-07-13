@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
 @Output() open=new EventEmitter()
 
+constructor(private router:Router){}
 opensideBar(){
   this.open.emit()
+}
+goTo(){
+this.router.navigate(['/'])
 }
 }

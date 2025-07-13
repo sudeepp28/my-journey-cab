@@ -1,0 +1,14 @@
+<div class="con">
+    <h1 >Your Cab Partner in Every Major City</h1>
+    <div class="cards">
+        @for(card of cards;track card){
+           <div class="card">
+             <img [src]="card.src" alt="">
+
+            <div class="text">
+                {{card.city}}
+            </div>
+           </div>
+        }
+    </div>
+</div>
