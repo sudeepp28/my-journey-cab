@@ -28,6 +28,7 @@ import { SFirstComponent } from "./service/s-first/s-first.component";
 import { SSecondComponent } from "./service/s-second/s-second.component";
 import { SthirdComponent } from "./service/sthird/sthird.component";
 import { ApartnerComponent } from "./about/apartner/apartner.component";
+import { CallNowComponent } from "./call-now/call-now.component";
 
 
 
@@ -46,7 +47,8 @@ import { ApartnerComponent } from "./about/apartner/apartner.component";
     declarations:[AppComponent,
         HomeComponent,HeaderComponent,SidebarComponent,TestimonialComponent,FooterComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent,HjourneyBannerComponent,HpartnerSecitonComponent,
         AboutComponent,AfirstComponent,AsecondComponent,ApartnerComponent,
-        ServiceComponent,SFirstComponent,SSecondComponent,SthirdComponent
+        ServiceComponent,SFirstComponent,SSecondComponent,SthirdComponent,
+        CallNowComponent
        ],
     bootstrap:[AppComponent],
     imports: [FormsModule,

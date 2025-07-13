@@ -1,7 +1,7 @@
 
-<app-hfirst></app-hfirst>
+<app-hfirst (open)="openCallNow()"></app-hfirst>
 <br>
-<app-hsecond></app-hsecond>
+<app-hsecond (open)="openCallNow()"></app-hsecond>
 <br>
 <app-hthird></app-hthird>
 <br>
@@ -20,3 +20,7 @@
     <button class="cta-button">Contact us</button>
   </div>
 </div>
+
+@if(isCallnow){
+  <app-call-now (close)="closeCallNow()"></app-call-now>
+}

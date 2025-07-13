@@ -4,9 +4,13 @@
 }
 
 .header {
-  background-color: #004466; /* Optional: dark blue or theme color */
+  /* background-color: #004466;  */
   color: white;
   padding: 40px 10px;
+   background-image: url('/assets/serviceBg2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
  
   
 

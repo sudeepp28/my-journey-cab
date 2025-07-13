@@ -10,7 +10,13 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
  
+isCallnow=false
 
-
+openCallNow(){
+  this.isCallnow=true
+}
+closeCallNow(){
+  this.isCallnow=false
+}
 
 }
