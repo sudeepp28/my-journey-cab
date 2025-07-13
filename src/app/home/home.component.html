@@ -7,17 +7,16 @@
 <br>
 
 <app-hfourth (open)="openCallNow()"></app-hfourth>
-    <!-- Journey Message Section -->
+   
 
 <app-hjourney-banner></app-hjourney-banner>
-<!-- Partner Section -->
 <app-hpartner-seciton></app-hpartner-seciton>
 <app-testimonial></app-testimonial>
 
 <div class="cta-section">
   <div class="cta-content">
     <h2>Comfort, Class, Convenience – Just a Click Away. Book Now</h2>
-    <button class="cta-button">Contact us</button>
+    <button (click)="goTo()" class="cta-button">Contact us</button>
   </div>
 </div>
 

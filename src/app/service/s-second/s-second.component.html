@@ -1,6 +1,7 @@
 <div class="con">
     @for(slide of slides;track slide){
-        <div class="slide">
+       <a [routerLink]="['/explore',slide.city]">
+         <div class="slide" >
             <img [src]="slide.src" alt="">
             <div class="text">
                 <h1>
@@ -11,5 +12,6 @@
                 <p>{{slide.para2}}</p>
             </div>
         </div>
+       </a>
     }
 </div>

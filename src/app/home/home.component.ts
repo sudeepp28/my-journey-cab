@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
- 
+ constructor(private router: Router){}
 isCallnow=false
 
 openCallNow(){
@@ -17,6 +17,9 @@ openCallNow(){
 }
 closeCallNow(){
   this.isCallnow=false
+}
+goTo(){
+this.router.navigate(['/contact'])
 }
 
 }

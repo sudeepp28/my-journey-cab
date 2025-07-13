@@ -6,6 +6,9 @@
   padding: 3rem 2rem;
   background-color: #c8dbee;
 }
+a{
+  text-decoration: none;
+}
 
 /* Slide layout */
 .slide {

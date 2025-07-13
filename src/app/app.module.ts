@@ -29,6 +29,8 @@ import { SSecondComponent } from "./service/s-second/s-second.component";
 import { SthirdComponent } from "./service/sthird/sthird.component";
 import { ApartnerComponent } from "./about/apartner/apartner.component";
 import { CallNowComponent } from "./call-now/call-now.component";
+import { ExploreComponent } from "./explore/explore.component";
+import { ContactUsComponent } from "./contact-us/contact-us.component";
 
 
 
@@ -48,7 +50,7 @@ import { CallNowComponent } from "./call-now/call-now.component";
         HomeComponent,HeaderComponent,SidebarComponent,TestimonialComponent,FooterComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent,HjourneyBannerComponent,HpartnerSecitonComponent,
         AboutComponent,AfirstComponent,AsecondComponent,ApartnerComponent,
         ServiceComponent,SFirstComponent,SSecondComponent,SthirdComponent,
-        CallNowComponent
+        CallNowComponent,ExploreComponent,ContactUsComponent
        ],
     bootstrap:[AppComponent],
     imports: [FormsModule,

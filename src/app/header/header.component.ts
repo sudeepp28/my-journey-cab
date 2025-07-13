@@ -17,4 +17,8 @@ opensideBar(){
 goTo(){
 this.router.navigate(['/'])
 }
+goContact(){
+  this.router.navigate(['/contact'])
+}
+
 }
