@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-s-first',
@@ -9,5 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class SFirstComponent implements OnInit {
 ngOnInit(): void {
   
+}
+@Output() open=new EventEmitter()
+
+openPopup(){
+  this.open.emit()
 }
 }

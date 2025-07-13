@@ -9,7 +9,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class CallNowComponent {
 @Output() close = new EventEmitter<void>();
 
-  adminPhone: string = '+919876543210';
+  adminPhone: string = '+919728115781';
+  prefilledText: string = encodeURIComponent('Hi, I would like to book a cab with My Journey Cabs.');
 
   closePopup() {
     this.close.emit();

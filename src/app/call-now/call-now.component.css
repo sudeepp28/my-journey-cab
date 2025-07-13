@@ -53,3 +53,20 @@
 .call-btn:hover {
   background: #1e7e34;
 }
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background: #1da851;
+}
+

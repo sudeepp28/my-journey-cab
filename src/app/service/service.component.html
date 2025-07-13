@@ -2,6 +2,10 @@
 
 </div>
 
-<app-s-first></app-s-first>
+<app-s-first (open)="openCallNow()"></app-s-first>
 <app-s-second></app-s-second>
 <app-sthird></app-sthird>
+
+@if(isCallnow){
+    <app-call-now (close)="closeCallNow()"></app-call-now>
+}

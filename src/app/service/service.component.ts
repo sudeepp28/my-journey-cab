@@ -7,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './service.component.css'
 })
 export class ServiceComponent {
+isCallnow=false
 
+openCallNow(){
+  this.isCallnow=true
+}
+closeCallNow(){
+  this.isCallnow=false
+}
 }

@@ -3,9 +3,14 @@
 <div class="popup">
   <button class="close-btn" (click)="closePopup()">×</button>
   <h2>📞 Contact Admin</h2>
-  <p>Need a cab? Call our admin directly!</p>
+  <p>Need a cab? Call or Text on WhatsApp our admin directly!</p>
 
   <div class="number-box">{{ adminPhone }}</div>
 
   <a class="call-btn" [href]="'tel:' + adminPhone">Call Now</a>
+  <a class="whatsapp-btn" 
+     [href]="'https://wa.me/' + adminPhone.replace('+', '') + '?text=' + prefilledText"
+     target="_blank">
+    Chat on WhatsApp
+  </a>
 </div>

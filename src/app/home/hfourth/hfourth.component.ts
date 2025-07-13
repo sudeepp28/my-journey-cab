@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hfourth',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './hfourth.component.css'
 })
 export class HfourthComponent {
+
+  @Output() open=new EventEmitter();
+
+  openPopUp(){
+    this.open.emit()
+  }
 services=[
   
   {

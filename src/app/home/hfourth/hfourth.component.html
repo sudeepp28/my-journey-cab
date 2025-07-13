@@ -10,7 +10,7 @@
     <div class="card-content">
       <h3>{{ service.title }}</h3>
       <p [innerHTML]="service.description"></p>
-      <button>Rent a car now</button>
+      <button (click)="openPopUp()">Rent a car now</button>
     </div>
   </div>
 </div>
