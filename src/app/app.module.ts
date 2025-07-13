@@ -27,6 +27,7 @@ import { ServiceComponent } from "./service/service.component";
 import { SFirstComponent } from "./service/s-first/s-first.component";
 import { SSecondComponent } from "./service/s-second/s-second.component";
 import { SthirdComponent } from "./service/sthird/sthird.component";
+import { ApartnerComponent } from "./about/apartner/apartner.component";
 
 
 
@@ -44,7 +45,7 @@ import { SthirdComponent } from "./service/sthird/sthird.component";
 @NgModule({
     declarations:[AppComponent,
         HomeComponent,HeaderComponent,SidebarComponent,TestimonialComponent,FooterComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent,HjourneyBannerComponent,HpartnerSecitonComponent,
-        AboutComponent,AfirstComponent,AsecondComponent,
+        AboutComponent,AfirstComponent,AsecondComponent,ApartnerComponent,
         ServiceComponent,SFirstComponent,SSecondComponent,SthirdComponent
        ],
     bootstrap:[AppComponent],

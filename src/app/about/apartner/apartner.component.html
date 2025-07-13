@@ -1,0 +1,14 @@
+<div class="partners-section">
+  <h3>Our Partners</h3>
+  <p>
+    At <strong><em>My Journey Cabs</em></strong>, we proudly collaborate with a wide network of trusted partners to deliver seamless travel experiences across India
+  </p>
+  <ul>
+    @for(slide of slides; track slide){
+        <li>
+            <img [src]="slide.src" alt="">
+            <h3>{{slide.text}}</h3>
+        </li>
+    }
+  </ul>
+</div>
