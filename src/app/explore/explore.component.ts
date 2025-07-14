@@ -69,7 +69,7 @@ constructor(private route:ActivatedRoute){}
 ngOnInit(): void {
   this.cityName=this.route.snapshot.paramMap.get('city') || ''
   const matchedSlide=this.slides.find(s=>s.city===this.cityName);
-  console.log(matchedSlide)
+ 
   this.slide=matchedSlide
 
 
