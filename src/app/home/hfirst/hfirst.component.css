@@ -42,9 +42,9 @@ flex-direction: column;
 }
 @keyframes fadein {
   0%{opacity: 0;
-  transform: translateX(100px);}
+  transform: scale(0);}
   100%{opacity: 1;
-  transform: translateX(0px);}
+  transform: scale(1);}
 }
 .upperlayer .text h2{
   font-size: 30px;
