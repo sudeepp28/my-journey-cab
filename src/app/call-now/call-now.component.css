@@ -65,6 +65,9 @@
   margin-left: 1rem;
   transition: background 0.3s ease;
 }
+.whatsapp-btn i {
+  font-size: 1.3rem;
+}
 
 .whatsapp-btn:hover {
   background: #1da851;

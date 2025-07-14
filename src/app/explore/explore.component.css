@@ -12,6 +12,9 @@
   margin: 1rem auto;
   max-width: 900px;
 }
+.text img{
+  border-radius: 20px;
+}
 
 .text h1 {
   font-size: 2rem;

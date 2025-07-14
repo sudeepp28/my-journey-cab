@@ -7,10 +7,11 @@
 
   <div class="number-box">{{ adminPhone }}</div>
 
-  <a class="call-btn" [href]="'tel:' + adminPhone">Call Now</a>
+  <a class="call-btn" [href]="'tel:' + adminPhone">📞Call Now</a>
   <a class="whatsapp-btn" 
      [href]="'https://wa.me/' + adminPhone.replace('+', '') + '?text=' + prefilledText"
      target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
     Chat on WhatsApp
   </a>
 </div>
