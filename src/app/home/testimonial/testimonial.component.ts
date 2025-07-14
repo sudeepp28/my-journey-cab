@@ -64,4 +64,31 @@ resetAutoplay() {
       this.nextSlide();
     }, 10000);
   }
+
+  touchStartX = 0;
+touchEndX = 0;
+
+handleTouchStart(event: TouchEvent) {
+  this.touchStartX = event.changedTouches[0].screenX;
+}
+
+handleTouchEnd(event: TouchEvent) {
+  this.touchEndX = event.changedTouches[0].screenX;
+  this.handleSwipeGesture();
+}
+
+handleSwipeGesture() {
+  const deltaX = this.touchEndX - this.touchStartX;
+
+  // Minimum swipe distance threshold
+  const minSwipeDistance = 50;
+
+  if (deltaX > minSwipeDistance) {
+    // Swiped right → previous slide
+    this.prevSlide();
+  } else if (deltaX < -minSwipeDistance) {
+    // Swiped left → next slide
+    this.nextSlide();
+  }
+}
 }

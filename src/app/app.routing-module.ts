@@ -6,10 +6,10 @@ import { ServiceComponent } from './service/service.component';
 import { ExploreComponent } from './explore/explore.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 
-// Optional router configuration
+
 const routerOptions: ExtraOptions = {
-  scrollPositionRestoration: 'enabled', // scroll to top on navigation
-  anchorScrolling: 'enabled',           // enables #anchor links if used
+  scrollPositionRestoration: 'enabled', 
+  anchorScrolling: 'enabled',           
   onSameUrlNavigation: 'reload'
 };
 
