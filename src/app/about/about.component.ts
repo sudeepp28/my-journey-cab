@@ -7,12 +7,5 @@ standalone:false,
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-isCallnow=false
 
-openCallNow(){
-  this.isCallnow=true
-}
-closeCallNow(){
-  this.isCallnow=false
-}
 }
