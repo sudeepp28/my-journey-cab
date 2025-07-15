@@ -28,9 +28,9 @@
 /* Right side stats */
 .explore-right {
   display: grid;
-  flex: 2 1 500px;
+  flex: 2 1 600px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 /* Each stat box */

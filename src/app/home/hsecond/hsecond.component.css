@@ -21,7 +21,7 @@
 /* Text block */
 .second .text {
   width: 100%;
-  max-width: 600px; /* limit text width for better readability */
+  max-width: 900px; /* limit text width for better readability */
 }
 
 .second h2 {

@@ -21,7 +21,7 @@
 /* Text content styling */
 .third .text {
   width: 100%;
-  max-width: 600px;  /* restrict text block width */
+  max-width: 800px;  /* restrict text block width */
 }
 
 .third h2 {
